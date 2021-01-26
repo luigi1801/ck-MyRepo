@@ -1,0 +1,57 @@
+/home/luigi/CK-TOOLS/lib-tensorflow-prebuilt-cpu-1.14.0-compiler.python-3.6.9-linux-64/lib/tensorflow/python/framework/dtypes.py:516: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/luigi/CK-TOOLS/lib-tensorflow-prebuilt-cpu-1.14.0-compiler.python-3.6.9-linux-64/lib/tensorflow/python/framework/dtypes.py:517: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/luigi/CK-TOOLS/lib-tensorflow-prebuilt-cpu-1.14.0-compiler.python-3.6.9-linux-64/lib/tensorflow/python/framework/dtypes.py:518: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/luigi/CK-TOOLS/lib-tensorflow-prebuilt-cpu-1.14.0-compiler.python-3.6.9-linux-64/lib/tensorflow/python/framework/dtypes.py:519: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/luigi/CK-TOOLS/lib-tensorflow-prebuilt-cpu-1.14.0-compiler.python-3.6.9-linux-64/lib/tensorflow/python/framework/dtypes.py:520: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/luigi/CK-TOOLS/lib-tensorflow-prebuilt-cpu-1.14.0-compiler.python-3.6.9-linux-64/lib/tensorflow/python/framework/dtypes.py:525: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+/home/luigi/CK-TOOLS/lib-tensorflow-prebuilt-cpu-1.14.0-compiler.python-3.6.9-linux-64/lib/tensorboard/compat/tensorflow_stub/dtypes.py:541: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/luigi/CK-TOOLS/lib-tensorflow-prebuilt-cpu-1.14.0-compiler.python-3.6.9-linux-64/lib/tensorboard/compat/tensorflow_stub/dtypes.py:542: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/luigi/CK-TOOLS/lib-tensorflow-prebuilt-cpu-1.14.0-compiler.python-3.6.9-linux-64/lib/tensorboard/compat/tensorflow_stub/dtypes.py:543: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/luigi/CK-TOOLS/lib-tensorflow-prebuilt-cpu-1.14.0-compiler.python-3.6.9-linux-64/lib/tensorboard/compat/tensorflow_stub/dtypes.py:544: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/luigi/CK-TOOLS/lib-tensorflow-prebuilt-cpu-1.14.0-compiler.python-3.6.9-linux-64/lib/tensorboard/compat/tensorflow_stub/dtypes.py:545: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/luigi/CK-TOOLS/lib-tensorflow-prebuilt-cpu-1.14.0-compiler.python-3.6.9-linux-64/lib/tensorboard/compat/tensorflow_stub/dtypes.py:550: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+WARNING:tensorflow:From /home/luigi/CK-TOOLS/lib-tensorflow-prebuilt-cpu-1.14.0-compiler.python-3.6.9-linux-64/lib/tensorflow/python/ops/init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2021-01-06 13:14:35.692546: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2021-01-06 13:14:35.712371: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2599990000 Hz
+2021-01-06 13:14:35.712846: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x37facd0 executing computations on platform Host. Devices:
+2021-01-06 13:14:35.712863: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): <undefined>, <undefined>
+2021-01-06 13:14:35.720008: W tensorflow/compiler/jit/mark_for_compilation_pass.cc:1412] (One-time warning): Not using XLA:CPU for cluster because envvar TF_XLA_FLAGS=--tf_xla_cpu_global_jit was not set.  If you want XLA:CPU, either set that envvar, or use experimental_jit_scope to enable XLA:CPU.  To confirm that XLA is active, pass --vmodule=xla_compilation_cache=1 (as a proper command-line flag, not via TF_XLA_FLAGS) or set the envvar XLA_FLAGS=--xla_hlo_profile.
+WARNING:tensorflow:From ../hello-world.py:30: The name tf.lite.TocoConverter is deprecated. Please use tf.compat.v1.lite.TocoConverter instead.
+
+WARNING:tensorflow:From ../hello-world.py:30: TocoConverter.from_keras_model_file (from tensorflow.lite.python.lite) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `lite.TFLiteConverter.from_keras_model_file` instead.
+WARNING:tensorflow:From /home/luigi/CK-TOOLS/lib-tensorflow-prebuilt-cpu-1.14.0-compiler.python-3.6.9-linux-64/lib/tensorflow/python/ops/init_ops.py:97: calling GlorotUniform.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /home/luigi/CK-TOOLS/lib-tensorflow-prebuilt-cpu-1.14.0-compiler.python-3.6.9-linux-64/lib/tensorflow/python/ops/init_ops.py:97: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2021-01-06 13:14:36.448681: I tensorflow/core/grappler/devices.cc:60] Number of eligible GPUs (core count >= 8, compute capability >= 0.0): 0 (Note: TensorFlow was not compiled with CUDA support)
+2021-01-06 13:14:36.448767: I tensorflow/core/grappler/clusters/single_machine.cc:359] Starting new session
+2021-01-06 13:14:36.451179: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:716] Optimization results for grappler item: graph_to_optimize
+2021-01-06 13:14:36.451190: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:718]   function_optimizer: function_optimizer did nothing. time = 0.001ms.
+2021-01-06 13:14:36.451194: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:718]   function_optimizer: function_optimizer did nothing. time = 0ms.
+WARNING:tensorflow:From /home/luigi/CK-TOOLS/lib-tensorflow-prebuilt-cpu-1.14.0-compiler.python-3.6.9-linux-64/lib/tensorflow/lite/python/util.py:238: convert_variables_to_constants (from tensorflow.python.framework.graph_util_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.compat.v1.graph_util.convert_variables_to_constants`
+WARNING:tensorflow:From /home/luigi/CK-TOOLS/lib-tensorflow-prebuilt-cpu-1.14.0-compiler.python-3.6.9-linux-64/lib/tensorflow/python/framework/graph_util_impl.py:270: extract_sub_graph (from tensorflow.python.framework.graph_util_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.compat.v1.graph_util.extract_sub_graph`
+2021-01-06 13:14:36.456897: I tensorflow/core/grappler/devices.cc:60] Number of eligible GPUs (core count >= 8, compute capability >= 0.0): 0 (Note: TensorFlow was not compiled with CUDA support)
+2021-01-06 13:14:36.456996: I tensorflow/core/grappler/clusters/single_machine.cc:359] Starting new session
+2021-01-06 13:14:36.457624: E tensorflow/core/grappler/grappler_item_builder.cc:637] Init node dense/kernel/Assign doesn't exist in graph

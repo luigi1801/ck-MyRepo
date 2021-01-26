@@ -1,0 +1,13 @@
+{
+  "customize": {
+    "env_prefix": "CK_ENV_TF_LITE_DELEGATE"
+  },
+  "soft_name": "Lib TFLite Delegate",
+  "tags": [
+    "tflite",
+    "delegate",
+    "lib-delegate",
+    "lib",
+    "ck-luigi"
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "backup_data_uid": "f050326dfd3477da",
+  "build_compiler_vars": {},
+  "compile_deps": {
+    "compiler": {
+      "local": "yes",
+      "name": "C++ compiler",
+      "tags": "compiler,lang-cpp"
+    },
+    "lib-delegate": {
+      "local": "yes",
+      "name": "Lib TFLite Delegate",
+      "sort": 20,
+      "tags": "lib-delegate,ck-luigi,tflite"
+    },
+    "library": {
+      "local": "yes",
+      "name": "TensorFlow Lite API",
+      "sort": 20,
+      "tags": "lib,tensorflow-lite,vstatic,v0,ck-luigi"
+    }
+  },
+  "compiler_add_include_as_env_from_deps": [
+    "CK_ENV_LIB_STDCPP_INCLUDE",
+    "CK_ENV_LIB_STDCPP_INCLUDE_EXTRA",
+    "CK_ENV_LIB_TF_INCLUDE0",
+    "CK_ENV_LIB_TF_INCLUDE1",
+    "CK_ENV_LIB_TF_INCLUDE2"
+  ],
+  "compiler_env": "CK_CXX",
+  "compiler_flags_as_env": "$<<CK_COMPILER_FLAG_CPP11>>$ $<<CK_ENV_LIB_TF_DEF>>$ -Wall -Wno-sign-compare -Wno-psabi",
+  "data_name": "TestTFLite",
+  "extra_ld_vars": "$<<CK_ENV_LIB_TF_LIBS_DIRS>>$ $<<CK_ENV_LIB_TF_LIBS>>$ $<<CK_ENV_TF_LITE_DELEGATE>>$",
+  "linker_add_lib_as_env": [
+    "CK_CXX_EXTRA",
+    "CK_ENV_LIB_STDCPP_STATIC"
+  ],
+  "main_language": "cpp",
+  "print_files_after_run": [
+    "stderr.log",
+    "stdout.log"
+  ],
+  "process_in_tmp": "yes",
+  "program": "yes",
+  "run_cmds": {
+    "default": {
+      "ignore_return_code": "no",
+      "run_time": {
+        "run_cmd_main": "$#BIN_FILE#$ \"$#src_path#$\"",
+        "run_cmd_out1": "stdout.log",
+        "run_cmd_out2": "stderr.log",
+        "run_output_files": [
+          "stdout.log",
+          "stderr.log"
+        ]
+      }
+    }
+  },
+  "run_deps": {
+    "compiler": {
+      "local": "yes",
+      "name": "C++ compiler",
+      "tags": "compiler,lang-cpp"
+    },
+    "lib-delegate": {
+      "local": "yes",
+      "name": "Lib TFLite Delegate",
+      "sort": 20,
+      "tags": "lib-delegate,ck-luigi,tflite"
+    },
+    "library": {
+      "local": "yes",
+      "name": "TensorFlow Lite API",
+      "sort": 20,
+      "tags": "lib,tensorflow-lite,vstatic,v0,ck-luigi"
+    }
+  },
+  "run_vars": {
+    "CK_VAR1": 123,
+    "CK_VAR2": 778
+  },
+  "source_files": [
+    "hello-world.cpp"
+  ],
+  "tags": [
+    "program",
+    "lang-cpp"
+  ],
+  "target_file": "a",
+  "template_type": "C++ program workflow"
+}

@@ -1,0 +1,34 @@
+{
+  "customize": {
+    "extra_dir": "",
+    "git_src_dir": "src",
+    "install_env": {
+      "BAZEL_URL": "https://github.com/bazelbuild/bazel/releases/download/2.0.1/bazel-2.0.1-dist.zip",
+      "BAZEL_ZIP": "bazel-2.0.0-dist.zip"
+    },
+    "use_git_revision": "no",
+    "version": "2.0.0"
+  },
+  "deps": {},
+  "end_full_path": {
+    "linux": "install/bin/bazel"
+  },
+  "need_cpu_info": "yes",
+  "only_for_host_os_tags": [
+    "linux"
+  ],
+  "only_for_target_os_tags": [
+    "linux"
+  ],
+  "process_script": "install",
+  "soft_uoa": "359f7730bd23ec60",
+  "suggested_path": "tool-bazel",
+  "tags": [
+    "tool",
+    "bazel",
+    "v2.0.0",
+    "v2.0",
+    "v2",
+    "ck-luigi"
+  ]
+}

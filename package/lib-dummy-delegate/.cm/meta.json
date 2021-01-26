@@ -1,0 +1,30 @@
+{
+  "customize": {
+    "version": "Dummy"
+  },
+  "deps": {
+    "library": {
+      "local": "yes",
+      "name": "TensorFlow Lite API",
+      "sort": 20,
+      "tags": "lib,tensorflow-lite,vstatic,v0,ck-luigi"
+    },
+    "tool": {
+      "local": "yes",
+      "name": "bazel",
+      "sort": 20,
+      "tags": "bazel,ck-luigi"
+    }
+  },
+  "end_full_path": {
+    "linux": "lib/lib-dummy_external_delegate.so"
+  },
+  "process_script": "CreateLib",
+  "soft_uoa": "f7b16863b44c2b9d",
+  "suggested_path": "lib-dummy-delegate",
+  "tags": [
+    "lib-delegate",
+    "dummy-delegate",
+    "ck-luigi"
+  ]
+}

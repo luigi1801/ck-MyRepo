@@ -1,0 +1,59 @@
+Creación del Interpreter
+Creación del Delegate
+Cargando delegate al interpreter
+Getting options  
+Initialize Kernel
+Check supported Nodes
+Getting Name
+Getting Name
+Creating Kernel  
+
+Initialization
+1
+
+3
+3
+2
+1
+
+1
+0
+
+Preparation
+Invocando Inferencia
+
+Evaluation
+9
+
+dense_input
+FLOAT32
+2
+1
+1
+25.000000
+0.000000
+
+FLOAT32
+dense/kernel/transpose
+2
+1
+1
+1.999980
+1.999980
+
+FLOAT32
+dense/MatMul_bias
+1
+1
+-0.999938
+-0.999938
+
+FLOAT32
+dense/BiasAdd
+2
+1
+1
+0
+49.000000
+
+Result is: 49.000000

@@ -1,0 +1,38 @@
+--- a/tensorflow/lite/tools/make/Makefile
++++ b/tensorflow/lite/tools/make/Makefile
+@@ -40,6 +40,8 @@
+ -I$(MAKEFILE_DIR)/downloads/neon_2_sse \
+ -I$(MAKEFILE_DIR)/downloads/farmhash/src \
+ -I$(MAKEFILE_DIR)/downloads/flatbuffers/include \
++-I$(MAKEFILE_DIR)/downloads/googletest/googletest/include/ \
++-I$(MAKEFILE_DIR)/downloads/googletest/googlemock/include/ \
+ -I$(MAKEFILE_DIR)/downloads/fp16/include \
+ -I$(MAKEFILE_DIR)/downloads/cpuinfo \
+ -I$(MAKEFILE_DIR)/downloads/cpuinfo/include \
+@@ -57,13 +59,15 @@
+ -lpthread \
+ -lm \
+ -lz \
+--ldl
++-ldl \
++${CK_EXTRA_LIB_RT} \
++${CK_EXTRA_LIB_ATOMIC}
+ 
+ # There are no rules for compiling objects for the host system (since we don't
+ # generate things like the protobuf compiler that require that), so all of
+ # these settings are for the target compiler.
+ CFLAGS := -O3 -DNDEBUG -DCPU_SETSIZE=__CPU_SETSIZE -fPIC $(EXTRA_CFLAGS)
+-CXXFLAGS := $(CFLAGS) --std=c++11 $(EXTRA_CXXFLAGS)
++CXXFLAGS := $(CFLAGS) --std=c++11 -flax-vector-conversions -fomit-frame-pointer -DTFLITE_WITH_RUY $(EXTRA_CXXFLAGS)
+ LDOPTS := -L/usr/local/lib
+ ARFLAGS := -r
+ TARGET_TOOLCHAIN_PREFIX :=
+@@ -291,7 +295,7 @@
+ 	$(CMD_LINE_TOOLS_SRCS)
+ 
+ # Where compiled objects are stored.
+-TARGET_OUT_DIR ?= $(TARGET)_$(TARGET_ARCH)
++#TARGET_OUT_DIR ?= $(TARGET)_$(TARGET_ARCH)
+ GENDIR := $(MAKEFILE_DIR)/gen/$(TARGET_OUT_DIR)/
+ OBJDIR := $(GENDIR)obj/
+ BINDIR := $(GENDIR)bin/
